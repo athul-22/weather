@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body onload="funOnload()">
+
+    <div class="main">
+        <div class="top_class"><span onclick="backFun()" class="material-symbols-outlined" id="back_icon">arrow_back_ios</span><span class="title">WEATHER APP</span></div>
+
+    <section class="input-section"> 
+
+        <div class="alertTop"><span  id="alert_text_span"><br><center><span id="alert_text"></span></center></span></div>
+        <input type="text" id="input" placeholder="Enter Location Manually"><br><br>
+        <div class="seperator"></div>
+        <button class="location_button" onclick="mainFun()" aria-required="true">Get Weather Details</button>
+    
+    </section>
+
+    <section class="result-section">
+        <div>
+            <center><img src="" height="150px" id="image"></center>
+        </div>
+        <div class="tem"><span class="tem-text"></span><sup>o</sup>C</div>
+        <div class="location-name"><span class="material-symbols-outlined">location_on</span><span class="location"></span></div>
+
+            <div class="bottom-section">
+                <div bottom-1>
+                    <img src="windy .gif" height="60px"><br><br>
+                    <span id="wind"></span><br>
+                    <span class="bottom-icon-text">Wind</span>
+                </div>
+                <div bottom-2>
+                    <img src="humidity.gif" height="60px"><br><br>
+                    <span id="humidity"></span><br>
+                    <span class="bottom-icon-text">humidity</span>
+                </div>
+                <div bottom-3>
+                    <img src="clouds.gif" height="60px"><br><br>
+                    <span id="clouds"></span><br>
+                    <span class="bottom-icon-text">Clouds</span>
+                </div>
+            </div>
+
+    </section>  
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
